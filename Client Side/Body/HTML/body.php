@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>body-card</title>
     <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../../Header/CSS/Client_Header_Navbar.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <div class="body">
+  
+    <div class="body" style="margin-top: 25px;">
         <div class="body-container">
-            <img src="../img/image1.jpeg" alt="">
+            <img src="../image/Body_Image/image1.jpeg" alt="">
         </div>
         <div class="logo">
-            <img src="../img/Logo.png" alt="">
+            <img src="../image/Body_Image/Logo.png" alt="">
         </div>
     </div>
     <div class="title">
@@ -24,19 +26,19 @@
     <div class="main-card">
         <div class="card-product">
             <div class="box">
-                 <img src="../img/krorma5.jpg" alt="">
+                 <img src="../image/Body_Image/krorma5.jpg" alt="">
                  <h5>Krorma</h5>
             </div>
             <div class="box">
-                 <img src="../img/krorma1.jpg" alt="">
+                 <img src="../image/Body_Image/krorma1.jpg" alt="">
                  <h5>Krorma</h5>
             </div>
             <div class="box">
-                <img src="../img/krorma2.jpg" alt="">
+                <img src="../image/Body_Image/krorma2.jpg" alt="">
                 <h5>Krorma</h5>
             </div>
             <div class="box">
-                <img src="../img/krorma3.jpg" alt="">
+                <img src="../image/Body_Image/krorma3.jpg" alt="">
                 <h5>Krorma</h5>
            </div>
         </div>
@@ -46,7 +48,7 @@
     <div class="main-card">
       <div class="main-box">
           <div class="box-product">
-             <img src="../img/krorma1.jpg" alt="">
+             <img src="../image/Body_Image/krorma1.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -54,7 +56,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/krorma2.jpg" alt="">
+             <img src="../image/Body_Image/krorma2.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -62,7 +64,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/krorma3.jpg" alt="">
+             <img src="../image/Body_Image/krorma3.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -70,7 +72,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/krorma5.jpg" alt="">
+             <img src="../image/Body_Image/krorma5.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -82,7 +84,7 @@
     <div class="main-card">
       <div class="main-box2">
           <div class="box-product">
-             <img src="../img/krorma1.jpg" alt="">
+             <img src="../image/Body_Image/krorma1.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -90,7 +92,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/krorma2.jpg" alt="">
+             <img src="../image/Body_Image/krorma2.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -98,7 +100,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/krorma3.jpg" alt="">
+             <img src="../image/Body_Image/krorma3.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -106,7 +108,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/krorma5.jpg" alt="">
+             <img src="../image/Body_Image/krorma5.jpg" alt="">
              <div class="box-detail">
                 <h3>Krorma Khmer</h3>
                 <h3>20$</h3>
@@ -121,7 +123,7 @@
     <div class="main-card">
       <div class="main-box">
           <div class="box-product">
-             <img src="../img/kraom1.jpg" alt="">
+             <img src="../image/Body_Image/kraom1.jpg" alt="">
              <div class="box-detail">
                 <h3>Kaorm Khmer</h3>
                 <h3>10.5$</h3>
@@ -129,7 +131,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/kraom2.jpg" alt="">
+             <img src="../image/Body_Image/kraom2.jpg" alt="">
              <div class="box-detail">
                 <h3>Karom Khmer</h3>
                 <h3>11.35$</h3>
@@ -137,7 +139,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/kraom3.jpg" alt="">
+             <img src="../image/Body_Image/kraom3.jpg" alt="">
              <div class="box-detail">
                 <h3>Karom Khmer</h3>
                 <h3>8.5$</h3>
@@ -145,7 +147,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/kraom4.jpeg" alt="">
+             <img src="../image/Body_Image/kraom4.jpeg" alt="">
              <div class="box-detail">
                 <h3>Karom Khmer</h3>
                 <h3>12.99$</h3>
@@ -157,7 +159,7 @@
     <div class="main-card">
       <div class="main-box2k">
           <div class="box-product">
-             <img src="../img/kraom1.jpg" alt="">
+             <img src="../image/Body_Image/kraom1.jpg" alt="">
              <div class="box-detail">
                 <h3>Karom Khmer</h3>
                 <h3>0.5$</h3>
@@ -165,7 +167,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/kraom2.jpg" alt="">
+             <img src="../image/Body_Image/kraom2.jpg" alt="">
              <div class="box-detail">
                 <h3>Karom Khmer</h3>
                 <h3>2.5$</h3>
@@ -173,7 +175,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/kraom3.jpg" alt="">
+             <img src="../image/Body_Image/kraom3.jpg" alt="">
              <div class="box-detail">
                 <h3>Karom Khmer</h3>
                 <h3>99$</h3>
@@ -181,7 +183,7 @@
              </div>
           </div>
           <div class="box-product">
-             <img src="../img/kraom4.jpeg" alt="">
+             <img src="../image/Body_Image/kraom4.jpeg" alt="">
              <div class="box-detail">
                 <h3>Karom Khmer</h3>
                 <h3>20$</h3>
@@ -190,6 +192,5 @@
           </div>
       </div>
     </div>
-     <!-- end krorma products -->
 </body>
 </html>
