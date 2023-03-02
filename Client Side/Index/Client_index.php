@@ -11,11 +11,11 @@
 <body>
     <!-- header go here  -->
     <?php
-         include "../Header/HTML/Client_Header_navbar.php"
+         include "../Header/HTML/Client_Header_navbar.php";
        ?>
     <!-- Body go here  -->
     <?php
-         include "../Body/HTML/body.php"
+         include "../Body/HTML/body.php";
        ?>
     <!-- Footer go here  -->
     
