@@ -13,14 +13,14 @@
         <div class="sign_in">
             <div class="title">
                 <h3>WELCOME BACK</h3>
-                <p>Not registered?<a href="" style="color:black;font-weight:500;text-decoration:none;">Sing up</a></p>
+                <p>Not registered? <a href="../sign-up/sign-up.php" style= "color:black;font-weight:500;text-decoration:none; ">Sign in </a> </p>
             </div>
             <input type="text" name="name" id="name" placeholder="Name">
             <input type="password" name="password" id="password" placeholder="Password">
             <input type="submit" id="signin" value="Sign In">
         </div>
         <div class="image">
-            <img src="../../img/twins.jpg" alt="">
+            <img src="../../../image/Users_account/photo_2023-03-02_19-33-26.jpg" alt="">
         </div>
         
     </form>

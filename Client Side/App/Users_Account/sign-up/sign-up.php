@@ -11,12 +11,12 @@
     <form action="" class="frm_sign-up">
 
         <div class="image">
-            <img src="../../img/twins.jpg" alt="">
+            <img src="../../../image/Users_account/photo_2023-03-02_19-33-26.jpg" alt="">
         </div>
         <div class="sign_up">
             <div class="title">
                 <h3>GET STARTED</h3>
-                <p style="font-size:10pt;">Already have an account?<a href="" style="color:black;font-weight:500;text-decoration:none;">Sing in</a></p>
+                <p style="font-size:10pt;">Already have an account?<a href="../sign-in/sign-in.php" style="color:black;font-weight:500;text-decoration:none;">Sing in</a></p>
             </div>
             <input type="text" name="name" id="name" placeholder="Name">
             <input type="email" id="email" name="email" placeholder="Email">
