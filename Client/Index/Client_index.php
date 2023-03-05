@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../App/Body/CSS/body.css">
 </head>
 <body>
+
     <!-- header go here  -->
     <?php
         include "../App/Header/HTML/Client_Header_navbar.php"
@@ -19,5 +20,6 @@
        ?>
     <!-- Footer go here  -->
    <a href="../App/Users_Account/sign-up/sign-up.php"></a>
+   
 </body>
 </html>
