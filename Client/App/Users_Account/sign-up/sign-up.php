@@ -1,3 +1,12 @@
+<?php
+
+    $conn = new mysqli('localhost','root','','boranstore');
+
+    if(!$conn){
+        die(mysqli_error($conn));
+    }
+
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
