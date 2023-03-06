@@ -1,13 +1,11 @@
 <?php
-include '../App/Body/Database/example.php';
-            
-$conn = new mysqli('localhost','root','','boranstore');
+    include '../App/Body/Database/example.php';
+                
+    $conn = new mysqli('localhost','root','','boranstore');
 
-if($conn){
-    echo 'Success';
-}else{
-    die(mysqli_error($conn));
-}
+    if(!$conn){
+        die(mysqli_error($conn));
+    }
 
 ?>
 
@@ -62,107 +60,60 @@ if($conn){
     <!-- start krorma products -->
     <h2>KRORMA PRODUCT</h2>
     <div class="main-card">
-        <!-- <div class="main-box">
-            <div class="box-product">
-                <img src="../image/Body_Image/krorma1.jpg" alt="">
-                <div class="box-detail">
-                    <span><strong>Krorma Khmer</strong><p>0000-00-00</p></span>
-                    <span><strong>$20</strong><p>%5</p></span>
-                    <span><a class="btn btn-outline-warning" href="">Add to cart</a><a class="btn btn-outline-secondary" href="">Detail</a></span>
-                </div>
-            </div>
-            
-        </div> -->
+        <div class="main-box box-inline">
 
-        <?php
+            <?php 
 
-            $comm = "SELECT * FROM `kroma`";
-            $result = mysqli_query($conn,$comm);
+                $comm = "SELECT * FROM `kroma`";
+                $result = mysqli_query($conn,$comm);
 
-            while($row = mysqli_fetch_assoc($result)){
+                while($row = mysqli_fetch_assoc($result)){
                     $image = $row['IMAGE'];
                     $title = $row['TITLE'];
                     $date = $row['DATE'];
                     $price = $row['PRICE'];
                     $discount = $row['DISCOUNT'];
                     $final_price = $price-($price*($discount/100));
-    
-    
+
                     echo '
-                    <div class="main-box">
-                        <div class="box-product">
-                            <img src="../image/Body_Image/'.$image.'" alt="">
-                            <div class="box-detail">
-                                <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
-                                <span><strong>$'.$final_price.'</strong><p>'.$discount.'</p></span>
-                                <span><a class="btn btn-outline-warning" href="">Add to cart</a><a class="btn btn-outline-secondary" href="">Detail</a></span>
-                            </div>
+
+                    <div class="box-product">
+                        <img src="../image/Body_Image/'.$image.'" alt="">
+                        <div class="box-detail">
+                            <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
+                            <span><p style="color:blue;">$'.$final_price.'</p><p style="color:red;text-decoration:line-through;">%'.$discount.'</p></span>
+                            <span><a class="btn btn-outline-warning" href="">Add to cart</a><a class="btn btn-outline-secondary" href="">Detail</a></span>
                         </div>
-                    </div>
-                        ';
+                    </div> 
+                    
+                    ';
                 }
-        ?>
+            
+            ?>
+            <!-- <div class="box-product">
+                <img src="../image/Body_Image/krorma1.jpg" alt="">
+                <div class="box-detail">
+                    <span><strong>Krorma Khmer</strong><p>0000-00-00</p></span>
+                    <span><strong>$20</strong><p>%5</p></span>
+                    <span><a class="btn btn-outline-warning" href="">Add to cart</a><a class="btn btn-outline-secondary" href="">Detail</a></span>
+                </div>
+            </div> -->
+
+            
+            
+        </div>
+
+        
+
+        
 
 
     </div>
     <div class="main-card">
-        <?php 
-            
-
-            // $comm = "SELECT * FROM `kroma`";
-            // $result = mysqli_query($conn,$comm);
-
-            // while($row = mysqli_fetch_assoc($result)){
-            //     $image = $row['IMAGE'];
-            //     $title = $row['TITLE'];
-            //     $date = $row['DATE'];
-            //     $price = $row['PRICE'];
-            //     $discount = $row['DISCOUNT'];
-            //     $final_price = $price-($price*($discount/100));
-
-
-            //     echo '
-            //         <div class="box-product">
-            //         <img src="../image/Body_Image/krorma1.jpg" alt="">
-            //         <div class="box-detail">
-            //             <h3>Krorma Khmer</h3>
-            //             <h3>20$</h3>
-            //             <h3><a href="">Detail</a></h3>
-            //         </div>
-            //         </div>
-            //         ';
-            // }
         
-        
-        ?>
         <div class="main-box2">
 
-            <?php
-            // while($row = mysqli_fetch_assoc($result)){
-            //     $image = $row['IMAGE'];
-            //     $title = $row['TITLE'];
-            //     $date = $row['DATE'];
-            //     $price = $row['PRICE'];
-            //     $discount = $row['DISCOUNT'];
-            //     $final_price = $price-($price*($discount/100));
-
-
-            //     echo '
-            //     <div class="main-box">
-            //         <div class="box-product">
-            //             <img src="../image/Body_Image/'.$image.'" alt="">
-            //             <div class="box-detail">
-            //                 <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
-            //                 <span><strong>$'.$final_price.'</strong><p>'.$discount.'</p></span>
-            //                 <span><a class="btn btn-outline-warning" href="">Add to cart</a><a class="btn btn-outline-secondary" href="">Detail</a></span>
-            //             </div>
-            //         </div>
-            //     </div>
-            //         ';
-            // }
             
-            ?>
-
 
 
             <div class="box-product">
@@ -206,7 +157,38 @@ if($conn){
     </div>
     <div class="main-card">
         <div class="main-box">
-            <div class="box-product">
+
+                
+
+            <?php 
+
+                $comm = "SELECT * FROM `karom`";
+                $result = mysqli_query($conn,$comm);
+
+                while($row = mysqli_fetch_assoc($result)){
+                    $image = $row['IMAGE'];
+                    $title = $row['TITLE'];
+                    $date = $row['DATE'];
+                    $price = $row['PRICE'];
+                    $discount = $row['DISCOUNT'];
+                    $final_price = $price-($price*($discount/100));
+
+                    echo '
+
+                    <div class="box-product">
+                        <img src="../image/Body_Image/'.$image.'" alt="">
+                        <div class="box-detail">
+                            <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
+                            <span><p style="color:blue;">$'.$final_price.'</p><p style="color:red;text-decoration:line-through;">%'.$discount.'</p></span>
+                            <span><a class="btn btn-outline-warning" href="">Add to cart</a><a class="btn btn-outline-secondary" href="">Detail</a></span>
+                        </div>
+                    </div> 
+                    
+                    ';
+                }
+
+            ?>
+            <!-- <div class="box-product">
                 <img src="../image/Body_Image/kraom1.jpg" alt="">
                 <div class="box-detail">
                     <h3>Kaorm Khmer</h3>
@@ -237,7 +219,7 @@ if($conn){
                     <h3>12.99$</h3>
                     <h3><a href="">Detail</a></h3>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="main-card">
