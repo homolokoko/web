@@ -67,21 +67,40 @@
                     $price = $row['PRICE'];
                     $discount = $row['DISCOUNT'];
                     $final_price = $price-($price*($discount/100));
+                    if($discount  > 0)
+                    {
+                        echo '
 
-                    echo '
+                        <div class="box-product">
+                            <img src="../image/Body_Image/'.$image.'" alt="">
+                            <div class="box-detail">
+                                <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
+                                <span><p style="color:red;text-decoration:line-through;">$'.$price.'</p></span>
+                                <span><p style="color:blue;">$'.$final_price.'</p><p style="color:red;text-decoration:line-through;">%'.$discount.'</p></span>
+                                <span><a class="btn btn-outline-warning" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="">Detail</a></span>
+                            </div>
+                            
+                        </div> 
+                        
+                        ';
+                    }else
+                    {
+                        echo '
 
-                    <div class="box-product">
-                        <img src="../image/Body_Image/'.$image.'" alt="">
-                        <div class="box-detail">
-                            <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
-                            <span><p style="color:blue;">$'.$final_price.'</p><p style="color:red;text-decoration:line-through;">%'.$discount.'</p></span>
-                            <span><a class="btn btn-outline-warning" href="">Add to cart</a><a class="btn btn-outline-secondary" href="">Detail</a></span>
-                        </div>
-                    </div> 
-                    
-                    ';
+                        <div class="box-product">
+                            <img src="../image/Body_Image/'.$image.'" alt="">
+                            <div class="box-detail">
+                                <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
+                                <span><p style="color:blue;">$'.$price.'</p></span>
+                                <span><a style="margin-top: 35px;" class="btn btn-outline-warning" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary" href="">Detail</a></span>
+                            </div>
+                        </div> 
+                        
+                        ';
+                    }
+                
                 }
-            
+                
             ?>
             <!-- <div class="box-product">
                 <img src="../image/Body_Image/krorma1.jpg" alt="">
