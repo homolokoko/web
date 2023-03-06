@@ -44,7 +44,7 @@
                 <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
             <div class="login-signup">
-                <a href="">Account <i class="fa-solid fa-user" style="font-size: 14px;"></i></a>
+                <a href="../App/Users_Account/sign-in/sign-in.php"> Account <i class="fa-solid fa-user" style="font-size: 14px;"></i></a>
             </div>
             <div class="hamburger">
                 <div></div>
