@@ -1,45 +1,4 @@
-<?php
 
-    // @include '../../database/config.php';
-    // $conn = mysqli_connect('localhost','root','','user_db');
-
-    if(isset($_POST['submit'])) {
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        // $confirm_password = $_POST['confirm_password'];
-        // $name = $conn, $_POST['name'];
-        // $email = $conn, $_POST['email'];
-        // $password = md5($_POST['password']);
-        // $cpassword = md5($_POST['cpassword']);
-
-        // $select = "SELECT * FROM `user_form` WHERE email = '$email' && password = '$password' ";
-        $insert = "INSERT INTO `user_form1`(name, email, password) VALUES('$name', '$email','$password')";
-        $result = mysqli_query($conn, $insert);
-
-
-        if($result) {
-            echo "Success";
-        }else {
-            die(mysqli_error($conn));
-        }
-        // if(mysqli_num_rows($result) > 0) {
-        //     $error[] = 'User already exist!';
-        // }else {
-        //     if($password != $confirm_password) {
-        //         $error[] = 'Password not matched';
-        //     } else {
-        //         // $insert = "INSERT INTO `user_form`(name, email, password) VALUES('$name', '$email','$password')";
-        //         mysqli_query($conn, $insert);
-        //         header('location:../sign-in/sign-in.php');
-        //     }
-        // }
-    };
-
-
-
-
-?>
 
 <html lang="en">
 <head>
