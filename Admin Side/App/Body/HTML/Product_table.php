@@ -44,7 +44,7 @@
                 echo '
                     <tr>
                         <td> <span>'.$id.'</span> </td>
-                        <td><img src="../image/Body_Image/'.$image.' " alt=""></td>
+                        <td><img src="../image/Product_image/'.$image.' " alt=""></td>
                         <td> <span> '.$title.' </span></td>
                         <td> <span>'.$price.'$</span> </td>
                         <td> <span class="my_dis" >'.$discount.'%</span> </td>
@@ -53,13 +53,14 @@
                         <td> <span>'.$qty.'</span> </td>
                         <td> <span>'.$date.'</span> </td>
                         <td>
-                            <a href="#" class="btnView">View</a>
+                            <a href="../App/Body/HTML/Product_update.php?id='.$id.' " class="btnView">View</a>
                             <a href="../Controler/Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
                         </td>
                     </tr>
                     ' ;
             };
           ?>
+          <a href="../HTML/Product_update.php"></a>
         </tbody>
       </table>
     </div>

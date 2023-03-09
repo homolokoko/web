@@ -11,7 +11,6 @@
     <?php
         include("../App/Body/HTML/Product_table.php");
     ?>
-    <a href="./Admin_index.php"></a>
-    <a href="../Controler/Body_Delete_method.php"></a>
+    <img src="../image/Product_image/" alt="">
 </body>
 </html>
