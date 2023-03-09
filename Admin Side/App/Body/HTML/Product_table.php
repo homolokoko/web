@@ -1,15 +1,12 @@
 <?php
     include("../Controler/Body_DB.php");
-    /**
-     * 
-     */
-    
 ?>
 <head>
     <link rel="stylesheet" href="../App/Body/CSS/Product_table.css">
 </head>
 <body>
     <div class="main_container_table">
+    <a href="../App/Body/HTML/Insert_product.php">add more</a>
     <table class="content-table">
         <thead>
           <tr>
@@ -44,7 +41,7 @@
                 echo '
                     <tr>
                         <td> <span>'.$id.'</span> </td>
-                        <td><img src="../image/Product_image/'.$image.' " alt=""></td>
+                        <td><img src="'.$image.' " alt=""></td>
                         <td> <span> '.$title.' </span></td>
                         <td> <span>'.$price.'$</span> </td>
                         <td> <span class="my_dis" >'.$discount.'%</span> </td>

@@ -3,26 +3,14 @@
     width: 80%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 	background-color: rgb(221, 218, 218);
 	border-radius: 3%;
 }
-.left_Card
-{
-    width: 48%;
-    height: 516px;
-}
-.left_Card img
-{
-    width: 100%;
-    height: 100%;
-	border-radius: 5%;
-}
 .right_Card
 {
-    
-    width: 48%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,12 +49,13 @@
 }
 .form-style-9 ul li input
 {
-	border-radius: 2%;
+	border-radius: 3%;
 	background: none;
+    height: 42px;
 }
 .form-style-9 ul li span {
 	width: 120px;
-	height: 33px;
+	height: 42px;
 	background-color: rgb(202, 199, 193);
 	border-radius: 5px;
 	display: flex;
@@ -146,7 +135,8 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-.Update{
+.Insert{
+    margin-left: 10px;
     font-size: 15px;
     font-weight: bold;
     background: #2ea529;
@@ -158,12 +148,13 @@
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
     /* -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform; */
 }
-.Update:hover, .Update:focus, .Update:active{
+.Insert:hover, .Insert:focus, .Insert:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

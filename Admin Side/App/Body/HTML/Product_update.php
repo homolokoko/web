@@ -27,9 +27,10 @@
         <link rel="stylesheet" href="../CSS/Product_Update_Detail.css">
     </head>
     <body>
+        
         <div class="Main_Container">
             <div class="left_Card">
-                <img src="../../../image/Product_image/<?php echo $Image; ?> " alt="">
+                <img src="../../<?php echo $Image; ?> " alt="">
             </div>
             <div class="right_Card">
                 <form class="form-style-9" action="" method="post" name="form1" enctype="multipart/form-data">
