@@ -8,33 +8,33 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="../App/Header/CSS/material-dashboard.min.css">
+    <link rel="stylesheet" href="../mytestcss/material-dashboard.min.css">
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
 
     <!-- header -->
-    <?php include('../App/Header/HTML/headerNavbar.php'); ?>
+    <?php include('../mytesthtml/headerNavbar.php'); ?>
 
     <!-- Sidebar -->
-    <?php include('../App/Body/HTML/bodySidebar.php'); ?>
+    <?php include('./bodySidebar.php'); ?>
 
     <main class="main-content border-radius-lg">
     <!-- Navbar -->
     
-    <a href="../App/Body/HTML/Product_table.php"></a>
+    <a href="./admin.php"></a>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-            <?php include('../Index/add-item.php'); ?>
+            <?php include('../mytesthtml/add-item.php'); ?>
             </div>
         </div>
     </div>
     
 
     <!-- Footer -->
-    <?php include('../App/Footer/HTML/footer.php'); ?>
+    <?php include('./footer.php'); ?>
 
 
 

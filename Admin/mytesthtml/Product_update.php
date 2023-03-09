@@ -1,5 +1,5 @@
 <?php
-    include("../../../Controler/Body_DB.php");
+    include("../Controler/Body_DB.php");
     $id = $_GET['id'];
     $Title      ='';
     $Price      ='';
@@ -24,13 +24,14 @@
 ?>
 <html>
     <head>
-        <link rel="stylesheet" href="../CSS/Product_Update_Detail.css">
+        <link rel="stylesheet" href="../mytestcss/Product_Update_Detail.css">
     </head>
     <body>
         
         <div class="Main_Container">
             <div class="left_Card">
-                <img src="../../<?php echo $Image; ?> " alt="">
+                
+                <img src="<?php echo $Image; ?> " alt="">
             </div>
             <div class="right_Card">
                 <form class="form-style-9" action="" method="post" name="form1" enctype="multipart/form-data">
@@ -73,7 +74,7 @@
                         </li>
                         <!-- button goes here -->
                         <li>
-                            <a href="../../../Index/Admin_index.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
+                            <a href="../mytesthtml/Product_table.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
                             <button type="Update" name="Update" id="Update" class="Update">Update</button>
                         </li>
                     </ul>
@@ -81,8 +82,8 @@
             </div>
         </div>
     </body>
-  <a href="../../../image/Product_image/"></a>
-  <img src="../../../image/Product_image/" alt="">
+  <a href="../image/Product_image/"></a>
+  <img src="../image/Product_image/" alt="">
 </html>  
     <?php
         if(isset($_POST['Update']))

@@ -1,14 +1,17 @@
 <?php
-    include("../../../Controler/Body_DB.php");
+    include("../Controler/Body_DB.php");
 ?>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../CSS/Insert_product.css">
+    <!--Fonts and icons-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"/>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+    <link rel="stylesheet" href="../mytestcss/Insert_product.css">
+    <link rel="stylesheet" href="../mytestcss/material-dashboard.min.css">
 </head>
 <body>
-    
-   
-
+    <?php include( "./bodySidebar.php") ?>
 <div class="Main_Container">
         <div class="right_Card">
             <form class="form-style-9" action="" method="post" name="form1" enctype="multipart/form-data">
@@ -39,7 +42,7 @@
                     </li>
                     <!-- button goes here -->
                     <li>
-                        <a href="../../../Index/admin.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
+                        <a href="./admin.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
                         <button type="Insert" name="Insert" id="Insert" class="Insert">Insert</button>
                     </li>
                 </ul>
