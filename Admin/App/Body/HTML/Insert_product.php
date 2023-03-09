@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../CSS/Insert_product.css">
 </head>
 <body>
+    
+   
+
 <div class="Main_Container">
         <div class="right_Card">
             <form class="form-style-9" action="" method="post" name="form1" enctype="multipart/form-data">
@@ -36,7 +39,7 @@
                     </li>
                     <!-- button goes here -->
                     <li>
-                        <a href="../HTML/Product_table.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
+                        <a href="../../../Index/admin.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
                         <button type="Insert" name="Insert" id="Insert" class="Insert">Insert</button>
                     </li>
                 </ul>

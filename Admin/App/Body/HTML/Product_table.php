@@ -1,12 +1,14 @@
 <?php
-    include("../Controler/Body_DB.php");
+    include("../../../Controler/Body_DB.php");
 ?>
 <head>
-    <link rel="stylesheet" href="../App/Body/CSS/Product_table.css">
+    <link rel="stylesheet" href="../CSS/Product_table.css">
+  
 </head>
 <body>
+    
     <div class="main_container_table">
-    <a href="../App/Body/HTML/Insert_product.php">add more</a>
+    <a href="../../../Index/admin.php">Go back</a>
     <table class="content-table">
         <thead>
           <tr>

@@ -16,8 +16,9 @@
     <span class="nav-link-text ms-1">Dashboard</span>
   </a>
 </li>
+
 <li class="nav-item">
-  <a class="nav-link text-white " href="./tables.html">
+  <a class="nav-link text-white " href="../App/Body/HTML/Insert_product.php">
     
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">table_view</i>
@@ -26,12 +27,12 @@
   </a>
 </li>
 <li class="nav-item">
-  <a class="nav-link text-white " href="./billing.html">
+  <a class="nav-link text-white " href="../App/Body/HTML/Product_table.php">
     
       <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
         <i class="material-icons opacity-10">receipt_long</i>
       </div>
-    <span class="nav-link-text ms-1">Update</span>
+    <span class="nav-link-text ms-1">View table</span>
   </a>
 </li>
 <li class="nav-item">
