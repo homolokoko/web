@@ -2,17 +2,33 @@
     include("../Controler/Body_DB.php");
 ?>
 <head>
-    <link rel="stylesheet" href="../mytestcss/Product_table.css">
     <!--Fonts and icons-->
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"/>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
     <link rel="stylesheet" href="../mytestcss/material-dashboard.min.css">
+    <!-- css goes here -->
+    <link rel="stylesheet" href="../mytestcss/kroma_Product_table.css">
 </head>
 <body>
-  <?php include("./bodySidebar.php")?>
-    <div class="main_container_table">
-      <a href="./choose_type_product_view_table.php">Go back</a>
+  <!-- include sidebar and header here -->
+  <?php 
+      include("./headerNavbar.php");
+      include("./bodySidebar.php");
+  ?>
+  <!-- table gose here -->
+  <div class="main_container_table">
+    <div class="myheader">
+      <div class="contain_header">
+        <!-- btn go back -->
+        <a class="btnGoback" href="../mytesthtml/choose_type_product_view_table.php">Go back</a>
+        <!-- letters  -->
+        <h3>MANAGERMENT TOOL</h3>
+        <!-- add more product btn -->
+        <a class="btnAdd" href="./khourm_Insert_product.php">ADD MORE</a>
+      </div>
+    </div>
+    <div class="mytable">
       <table class="content-table">
           <thead>
             <tr>
@@ -30,7 +46,7 @@
           </thead>
           <tbody>
             <?php
-              $comm = "SELECT * FROM `kroma`";
+              $comm = "SELECT * FROM `khourm`";
               $result = mysqli_query($conn,$comm);
 
               while($row = mysqli_fetch_assoc($result))
@@ -56,16 +72,16 @@
                           <td> <span>'.$qty.'</span> </td>
                           <td> <span>'.$date.'</span> </td>
                           <td>
-                              <a href="./Product_update.php?id='.$id.' " class="btnView">View</a>
-                              <a href="../Controler/Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
+                              <a href="./khourm_Product_update.php?id='.$id.' " class="btnView">View</a>
+                              <a href="../Controler/khourm_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
                           </td>
                       </tr>
                       ' ;
               };
             ?>
-            <a href="./Product_update.php"></a>
           </tbody>
         </table>
+      </div>
     </div>
 </body>
 <script>

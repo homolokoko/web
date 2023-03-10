@@ -1,16 +1,29 @@
 .Main_Container
 {
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 	background-color: rgb(221, 218, 218);
 	border-radius: 3%;
+	margin-left: 350px;
+}
+.left_Card
+{
+    width: 48%;
+    height: 610px;
+}
+.left_Card img
+{
+    width: 100%;
+    height: 100%;
+	border-radius: 5%;
 }
 .right_Card
 {
-    width: 60%;
+    
+    width: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,19 +62,25 @@
 }
 .form-style-9 ul li input
 {
-	border-radius: 3%;
+	border-radius: 2%;
 	background: none;
-    height: 42px;
 }
 .form-style-9 ul li span {
 	width: 120px;
-	height: 42px;
+	height: 33px;
 	background-color: rgb(202, 199, 193);
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: 5px;
+}
+.containBTN
+{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .form-style-9 ul li  .field-style
 {
@@ -114,10 +133,12 @@
 }
 /* all btn */
 .btnGoback{
+    border: none;
+	margin-right: 20px;
     font-size: 15px;
     font-weight: bold;
-    background: #1E90FF;
-    padding: 15px;
+    background: #023047;
+    padding: 13px 30px;   
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -125,22 +146,19 @@
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform; */
 }
 .btnGoback:hover, .btn:focus, .btn:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
+
     transform: scale(1.1);
 }
-.Insert{
-    margin-left: 10px;
+.Update{
+	border: none;
+	margin-right: 20px;
     font-size: 15px;
     font-weight: bold;
-    background: #2ea529;
-    padding: 15px;
+    background: #219ebc;
+    padding: 13px 30px;   
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -148,14 +166,9 @@
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: none;
-    /* -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform; */
+   
 }
-.Insert:hover, .Insert:focus, .Insert:active{
+.Update:hover, .Update:focus, .Update:active{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
