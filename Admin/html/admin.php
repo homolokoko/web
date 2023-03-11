@@ -8,13 +8,13 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
     <!-- CSS -->
-    <link rel="stylesheet" href="../mytestcss/material-dashboard.min.css">
+    <link rel="stylesheet" href="../css/material-dashboard.min.css">
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
 
     <!-- header -->
-    <?php include('../mytesthtml/headerNavbar.php'); ?>
+    <?php include('../html/headerNavbar.php'); ?>
 
     <!-- Sidebar -->
     <?php include('./bodySidebar.php'); ?>
@@ -27,7 +27,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-            <?php include('../mytesthtml/add-item.php'); ?>
+            <?php include('../html/add-item.php'); ?>
             </div>
         </div>
     </div>

@@ -6,9 +6,9 @@
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"/>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
-    <link rel="stylesheet" href="../mytestcss/material-dashboard.min.css">
+    <link rel="stylesheet" href="../css/material-dashboard.min.css">
     <!-- css goes here -->
-    <link rel="stylesheet" href="../mytestcss/kroma_Product_table.css">
+    <link rel="stylesheet" href="../css/kroma_Product_table.css">
 </head>
 <body>
   <!-- include sidebar and header here -->
@@ -21,11 +21,11 @@
     <div class="myheader">
       <div class="contain_header">
         <!-- btn go back -->
-        <a class="btnGoback" href="../mytesthtml/choose_type_product_view_table.php">Go back</a>
+        <a class="btnGoback" href="../html/choose_type_product_view_table.php">Go back</a>
         <!-- letters  -->
         <h3>MANAGERMENT TOOL</h3>
         <!-- add more product btn -->
-        <a class="btnAdd" href="./khourm_Insert_product.php">ADD MORE</a>
+        <a class="btnAdd" href="./kroma_Insert_product.php">ADD MORE</a>
       </div>
     </div>
     <div class="mytable">
@@ -46,7 +46,7 @@
           </thead>
           <tbody>
             <?php
-              $comm = "SELECT * FROM `khourm`";
+              $comm = "SELECT * FROM `kroma`";
               $result = mysqli_query($conn,$comm);
 
               while($row = mysqli_fetch_assoc($result))
@@ -72,8 +72,8 @@
                           <td> <span>'.$qty.'</span> </td>
                           <td> <span>'.$date.'</span> </td>
                           <td>
-                              <a href="./khourm_Product_update.php?id='.$id.' " class="btnView">View</a>
-                              <a href="../Controler/khourm_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
+                              <a href="./kroma_Product_update.php?id='.$id.' " class="btnView">View</a>
+                              <a href="../Controler/kroma_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
                           </td>
                       </tr>
                       ' ;
@@ -83,6 +83,7 @@
         </table>
       </div>
     </div>
+    
 </body>
 <script>
   function confirmDelete()

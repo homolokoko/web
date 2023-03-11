@@ -9,12 +9,12 @@
             {
                 <?php
                     mysqli_query($conn,"DELETE FROM `khourm` WHERE id=$id");
-                    header("Location: ../mytesthtml/khourm_Product_table.php");
+                    header("Location: ../html/khourm_Product_table.php");
                 ?>
             } else 
             {
                 <?php
-                    header("Location: ../mytesthtml/khourm_Product_table.php");
+                    header("Location: ../html/khourm_Product_table.php");
                 ?>
             }
         </script>

@@ -9,16 +9,14 @@
             {
                 <?php
                     mysqli_query($conn,"DELETE FROM `kroma` WHERE id=$id");
-                    header("Location: ../mytesthtml/kroma_Product_table.php");
+                    header("Location: ../html/kroma_Product_table.php");
                 ?>
             } else 
             {
                 <?php
-                    header("Location: ../mytesthtml/kroma_Product_table.php");
+                    header("Location: ../html/kroma_Product_table.php");
                 ?>
             }
         </script>
     <?php
 ?>
-
-  

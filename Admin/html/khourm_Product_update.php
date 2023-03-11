@@ -8,7 +8,7 @@
     $Image      ='';
     $Date       ='';
     $Qty        ='';
-    $res = mysqli_query($conn,"SELECT * FROM `kroma` WHERE ID = $id");
+    $res = mysqli_query($conn,"SELECT * FROM `khourm` WHERE ID = $id");
     while($row=mysqli_fetch_array($res))
     {
         
@@ -29,9 +29,9 @@
         <!-- Material Icons -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
         <!-- CSS -->
-        <link rel="stylesheet" href="../mytestcss/material-dashboard.min.css">
+        <link rel="stylesheet" href="../css/material-dashboard.min.css">
         <!-- CSS own page -->
-        <link rel="stylesheet" href="../mytestcss/kroma_Product_Update_Detail.css">
+        <link rel="stylesheet" href="../css/kroma_Product_Update_Detail.css">
     </head>
     <body>
         <?php
@@ -85,7 +85,7 @@
                         <!-- button goes here -->
                         <li>
                             <div class="containBTN" >
-                                <a href="./kroma_Product_table.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
+                                <a href="./khourm_Product_table.php" type="submit" name="btnGoback" id="btnGoback" class="btnGoback">Go Back</a>
                                 <button type="Update" name="Update" id="Update" class="Update">
                                     Update
                                 </button>
@@ -105,10 +105,10 @@
             {
                 if(!empty($_POST['Title']) && !empty($_POST['Price']) && !empty($_POST['Size']) && !empty($_POST['Qty']))
                 {
-                    mysqli_query($conn,"UPDATE `kroma` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', SIZE='$_POST[Size]' WHERE ID=$id ");
+                    mysqli_query($conn,"UPDATE `khourm` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', SIZE='$_POST[Size]' WHERE ID=$id ");
                     ?>
                         <script>
-                            window.location.href = "./kroma_Product_table.php";
+                            window.location.href = "./khourm_Product_table.php";
                         </script>
                     <?php
                 }else
@@ -124,10 +124,10 @@
                 $dst = "../image/Product_image/".$fnm;
                 $dst1 = "../image/Product_image/".$fnm; 
                 move_uploaded_file($_FILES["myImage"]["tmp_name"],$dst);
-                mysqli_query($conn,"UPDATE `kroma` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', SIZE='$_POST[Size]',IMAGE='$dst1' WHERE ID=$id ");
+                mysqli_query($conn,"UPDATE `khourm` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', SIZE='$_POST[Size]',IMAGE='$dst1' WHERE ID=$id ");
                 ?>
                     <script>
-                        window.location.href = "./kroma_Product_table.php";
+                        window.location.href = "./khourm_Product_table.php";
                     </script>
                 <?php
             }
