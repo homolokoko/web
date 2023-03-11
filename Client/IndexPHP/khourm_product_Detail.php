@@ -13,65 +13,70 @@
     <div class="main_contain">
         <div class="container">
             <!-- Start Detail main -->
-            <div class="detail-main">
-                <!-- Start detail img -->
-                <div class="detail-img-pro">
-                    <img src="../image/Body_Image/image1.jpeg" alt="">
-                </div>
-                <!-- Start detail description -->
-                <div class="description-pro">
-                    <?php
-                        $id = $_GET['id'];
-                        $res = mysqli_query($conn,"SELECT * FROM `khourm` WHERE ID = $id");
-                        while($row=mysqli_fetch_array($res))
-                        {
+                <?php
+                    $id = $_GET['id'];
+                    $res = mysqli_query($conn,"SELECT * FROM `khourm` WHERE ID = $id");
+                    while($row=mysqli_fetch_array($res))
+                    {
                             
-                            $Title      =$row["TITLE"];
-                            $Qty        =$row["QTY"];
-                            $Price      =$row["PRICE"];
-                            $Discount   =$row["DISCOUNT"];
-                            $Size       =$row["SIZE"];
-                            $Date       =$row["DATE"];
-                            $Image      =$row["IMAGE"];
-                        }
-                        $final_price = $Price-($Price*($Discount/100)); 
+                        $Title      =$row["TITLE"];
+                        $Qty        =$row["QTY"];
+                        $Price      =$row["PRICE"];
+                        $Discount   =$row["DISCOUNT"];
+                        $Size       =$row["SIZE"];
+                        $Date       =$row["DATE"];
+                        $Image      =$row["IMAGE"];
+                    }
+                    $final_price = $Price-($Price*($Discount/100)); 
+                        // conatain image goes here
+                        echo '
+                            <div class="detail-main">
+                                <div class="detail-img-pro">
+                                    <img src="'.$Image.'" alt="">
+                                </div>
+                                <!-- Start detail description -->
+                                <div class="description-pro">
+                            ';
                         if($Discount > 0 )
                         {
                             echo '
-                                <div class="contain_detail">
-                                    <h2>Title = <span>&nbsp; '.$Title.'  </span> </h2>
-                                    <h2>Size = <span>&nbsp;&nbsp; '.$Size.' </span> </h2>
-                                    <h2>Price = <span>&nbsp;'.$Price.' </span>  </h2>
-                                    <h2>Discount = <span>&nbsp; '.$Discount.' </span> </h2>
-                                    <h2>Final price = <span>&nbsp;'.$final_price.' </span> </h2>
-                                    <h2>Quantity = <span>&nbsp; '.$Qty.' </span> </h2>
-                                    <h2>Date = <span>&nbsp; '.$Date.' </span> </h2>
-                                </div>
+                                    <div class="contain_detail">
+                                        <h2>Title = <span>&nbsp; '.$Title.'  </span> </h2>
+                                        <h2>Size = <span>&nbsp;&nbsp; '.$Size.' </span> </h2>
+                                        <h2>Price = <span>&nbsp;'.$Price.' </span>  </h2>
+                                        <h2>Discount = <span>&nbsp; '.$Discount.' </span> </h2>
+                                        <h2>Final price = <span>&nbsp;'.$final_price.' </span> </h2>
+                                        <h2>Quantity = <span>&nbsp; '.$Qty.' </span> </h2>
+                                        <h2>Date = <span>&nbsp; '.$Date.' </span> </h2>
+                                    </div>
                                 ';
                         }else
                         {
                             echo '
-                                <div class="contain_detail">
-                                    <h2>Title = <span>&nbsp;'.$Title.' </span> </h2>
-                                    <h2>Size = <span>&nbsp;&nbsp;'.$Size.' </span> </h2>
-                                    <h2>Price = <span>&nbsp;'.$Price.' </span> </h2>
-                                    <h2>Quantity = <span>&nbsp;'.$Qty.' </span> </h2>
-                                    <h2>Date = <span>&nbsp;'.$Date.'</span> </h2>
-                                </div>
+                                    <div class="contain_detail">
+                                        <h2>Title = <span>&nbsp;'.$Title.' </span> </h2>
+                                        <h2>Size = <span>&nbsp;&nbsp;'.$Size.' </span> </h2>
+                                        <h2>Price = <span>&nbsp;'.$Price.' </span> </h2>
+                                        <h2>Quantity = <span>&nbsp;'.$Qty.' </span> </h2>
+                                        <h2>Date = <span>&nbsp;'.$Date.'</span> </h2>
+                                    </div>
                                 ';
-                        }
-                    ?>
-                    <!-- Start Add to card -->
-                    <div class="contain_btn">
-                        <div class="btn">
-                            <a href="./Client_index.php">Go Back</a>
-                        </div>
-                        <div class="btn">
-                            <a href="#">Add To Card</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        };
+                        echo '
+                                    <!-- Start Add to card -->
+                                    <div class="contain_btn">
+                                        <div class="btn">
+                                            <a href="./Client_index.php">Go Back</a>
+                                        </div>
+                                        <div class="btn">
+                                            <a href="#">Add To Card</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        ';
+                ?>
+            
             <!-- Start Order Prod -->
             <div class="order-prod">
                 <div class="order-prod-title">
