@@ -121,7 +121,7 @@
                 }
              }else
             {
-                $dst = "../image/Product_image/".$fnm;
+                $dst = "../../product_image_storage/".$fnm;
                 $dst1 = "../image/Product_image/".$fnm; 
                 move_uploaded_file($_FILES["myImage"]["tmp_name"],$dst);
                 mysqli_query($conn,"UPDATE `kroma` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', SIZE='$_POST[Size]',IMAGE='$dst1' WHERE ID=$id ");
