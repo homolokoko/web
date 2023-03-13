@@ -28,15 +28,7 @@
 
     <main class="main-content border-radius-lg">
     <!-- Navbar -->
-    
-    <div class="container myclass">
-        <div class="row">
-            <div class="col-md-12">
-                <?php include('../html/add-item.php'); ?>
-            </div>
-        </div>
-    </div>
-    
+
     <!-- Footer -->
     <?php include('./footer.php'); ?>
     <!--   Core JS Files   -->

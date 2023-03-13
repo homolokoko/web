@@ -2,7 +2,6 @@
     include('../Controler/Body_DB.php');
 ?>
 <head>
-    <title>Document</title>
     <link rel="stylesheet" href="../css/admin_login.css">
     <link rel="stylesheet" href="../css/material-dashboard.min.css">
 </head>
