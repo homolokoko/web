@@ -11,12 +11,14 @@
     display: flex;
     justify-content: center;
     height: 620px;
+    border-radius: 10px;
 }
 
 .body-container {
     width: 1120px;
     height: 620px;
-    /* background-color: aqua; */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .body-container img {

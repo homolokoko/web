@@ -31,6 +31,16 @@
 
     <!-- Footer -->
     <?php include('./footer.php'); ?>
+
+    <!-- Dash bord goes here -->
+    <div class="container myclass mt-3 me-6">
+        <div class="row">
+            <div class="col-md-12">
+                <?php include('../html/add-item.php'); ?>
+            </div>
+        </div>
+    </div>
+
     <!--   Core JS Files   -->
     <script src="../App/JS/bootstrap.bundle.min.js"></script>
     <script src="../App/JS/perfect-scrollbar.min.js"></script>

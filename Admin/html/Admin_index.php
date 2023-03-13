@@ -20,7 +20,7 @@
         include('./bodySidebar.php');
     ?>
     <!-- Dash bord goes here -->
-    <div class="container myclass">
+    <div class="container myclass mt-3 me-6">
         <div class="row">
             <div class="col-md-12">
                 <?php include('../html/add-item.php'); ?>

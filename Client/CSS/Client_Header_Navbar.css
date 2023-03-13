@@ -19,7 +19,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-    background: #9e2a2b;
+    background: black;
 }
 header .header-left {
     display: flex;

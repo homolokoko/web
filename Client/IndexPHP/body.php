@@ -16,12 +16,9 @@
     <link rel="stylesheet" href="../CSS/body.css">
 </head>
 <body>
-    <div class="body" style="margin-top: 25px;">
-        <div class="body-container">
-            <img src="../image/Body_Image/image1.jpeg" alt="">
-        </div>
-        <div class="logo">
-            <img src="../image/Body_Image/Logo.png" alt="">
+    <div class="body" style="margin-top: 25px; ">
+        <div class="body-container ">
+            <img src="../image/footer/image1.jpg" alt="">
         </div>
     </div>
     <div class="title">

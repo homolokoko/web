@@ -17,7 +17,9 @@
          include "./body.php";
        ?>
     <!-- Footer go here  -->
-   <a href="./footer.php"></a>
+    <?php
+         include "./footer.php";
+       ?>
    
 </body>
 </html>
