@@ -1,5 +1,5 @@
 <?php
-    include("../Controler/Body_DB.php");
+    include('../Controller/Body_DB.php');
     session_start();
     if(!isset($_SESSION['adminLoginID']))
     {
