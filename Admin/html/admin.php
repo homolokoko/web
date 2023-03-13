@@ -1,3 +1,11 @@
+<?php
+    include("../Controler/Body_DB.php");
+    session_start();
+    if(!isset($_SESSION['adminLoginID']))
+    {
+        header('Location: ./admin_login.php');
+    }
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +20,6 @@
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
-
     <!-- header -->
     <?php include('../html/headerNavbar.php'); ?>
 
@@ -22,24 +29,16 @@
     <main class="main-content border-radius-lg">
     <!-- Navbar -->
     
-    <a href="./admin.php"></a>
-
-    <div class="container">
+    <div class="container myclass">
         <div class="row">
             <div class="col-md-12">
-            <?php include('../html/add-item.php'); ?>
+                <?php include('../html/add-item.php'); ?>
             </div>
         </div>
     </div>
     
-
     <!-- Footer -->
     <?php include('./footer.php'); ?>
-
-
-
-
-   
     <!--   Core JS Files   -->
     <script src="../App/JS/bootstrap.bundle.min.js"></script>
     <script src="../App/JS/perfect-scrollbar.min.js"></script>

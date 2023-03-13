@@ -1,17 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    include("../Controler/Body_DB.php");
+    session_start();
+    if(!isset($_SESSION['adminLoginID']))
+    {
+        header('Location: ./admin_login.php');
+    }
+?>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <!--Fonts and icons-->
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"/>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/material-dashboard.min.css">
 </head>
 <body>
-    <?php
-        include("../App/Body/HTML/Product_table.php");
+    <?php 
+        include('./headerNavbar.php');
+        include('./bodySidebar.php');
     ?>
-    <img src="../image/Product_image/" alt="">
-    <a href="../App/Body/HTML/Product_table.php"></a>
+    <!-- Dash bord goes here -->
+    <div class="container myclass">
+        <div class="row">
+            <div class="col-md-12">
+                <?php include('../html/add-item.php'); ?>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
