@@ -6,18 +6,18 @@
     <link rel="stylesheet" href="../css/material-dashboard.min.css">
 </head>
 <body>
-    <section class="h-100 gradient-form" style="background-color: #eee;">
+    <section class="h-100 gradient-form" style="background-color: white;">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-xl-10">
                     <div class="card rounded-3 text-black">
                         <div class="row g-0">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6" style="background-color: #f6f6f6;" >
                                 <div class="card-body p-md-5 mx-md-4">
                                     <div class="text-center">
-                                    <img src="../image/Users_account/admin-icon-trendy-design-style-isolated-white-background-vector-simple-modern-flat-symbol-web-site-mobile-logo-app-135742404.jpg"
+                                    <img src="../image/Users_account/347-3472704_admin-icon.png"
                                         style="width: 140px; height:100px;" alt="logo">
-                                    <h4 class="mt-1 mb-5 pb-1">WelCome back Admin</h4>
+                                    <h4 class="mt-1 mb-5 pb-1">WELCOME BACK ADMIN</h4>
                                     </div>
                                     <form class="form-style-9" action="" method="post" name="form1" enctype="multipart/form-data">
                                         <ul>
@@ -27,7 +27,7 @@
                                             </li>
                                             <!-- Admin Password goes here -->
                                             <li>
-                                                <span>Password</span><input type="password" name="admin_pass" class="field-style field-full align-none" placeholder="Pass" />
+                                                <span>Password</span><input type="password" name="admin_pass" class="field-style field-full align-none" placeholder="Password" />
                                             </li>
                                         </ul>
                                             <!-- button goes here -->
@@ -39,6 +39,7 @@
                             </div>
                             <!-- left side goes here -->
                             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                                <img class="w-100 h-100" src="../image/Users_account/image1.jpg" alt="">
                             </div>
                         </div>
                     </div>

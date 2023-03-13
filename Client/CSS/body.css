@@ -11,13 +11,11 @@
     display: flex;
     justify-content: center;
     height: 620px;
-    border-radius: 10px;
 }
 
 .body-container {
     width: 1120px;
-    height: 620px;
-    border-radius: 10px;
+    height: 650px;
     overflow: hidden;
 }
 
@@ -44,9 +42,9 @@
 h2 {
     margin-top: 150px;
     font-size: 40px;
+    font-weight: 600;
     text-align: center;
 }
-
 .kaorm h2 {
     margin-top: 220px;
 }
@@ -115,10 +113,10 @@ h4 {
 .box-product {
     /* background-color: blue; */
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     /* border: 1px solid gray; */
-    box-shadow: 0px 0px 1px gray;
-    height: 340px;
+    box-shadow: 0px 0px 1px black;
+    height: 360px;
     
 }
 
@@ -126,12 +124,12 @@ h4 {
 .box-product:hover {
     transform: scale(1.008);
     transition: all 0.3s;
-    box-shadow: 0px 0px 5px rgb(164, 164, 242);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 .box-product img {
     /* padding: 10px; */
-    border-radius: 20px;
+    border-radius: 15px;
     width: 100%;
     height: 150px;
 }
@@ -144,6 +142,7 @@ h4 {
 
 .box-detail span {
     width: 100%;
+    margin-top: 8px;
     height: auto;
     display: flex;
     justify-content: space-between;

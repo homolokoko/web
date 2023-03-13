@@ -1,5 +1,6 @@
+
 <?php
-    include '../DB/Body_DB.php';             
+include '../DB/Body_DB.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,15 +16,16 @@
     <!-- css goes here -->
     <link rel="stylesheet" href="../CSS/body.css">
 </head>
+
 <body>
-    <div class="body" style="margin-top: 25px; ">
-        <div class="body-container ">
+    <div class="body" style="margin-top: 25px;">
+        <div class="body-container" style="border-radius: 10px;">
             <img src="../image/footer/image1.jpg" alt="">
         </div>
     </div>
     <div class="title">
         <h2>PRODUCT-STORE</h2>
-        <h4>Here you can check out our all products!</h4>
+        <h4>Here you can check all of our products</h4>
     </div>
     <div class="main-card">
         <div class="card-product">
@@ -46,103 +48,92 @@
         </div>
     </div><a href="./product_Detail.php"></a>
     <!-- start krorma products -->
-    <h2>KRORMA PRODUCT</h2>
+    <h2 style="margin-top: 20px;">KRORMA PRODUCT</h2>
     <div class="main-card">
-        <div class="main-box box-inline"> 
-            <?php 
-                $comm = "SELECT * FROM `kroma`";
-                $result = mysqli_query($conn,$comm);
-
-                while($row = mysqli_fetch_assoc($result)){
-                    $id     = $row['ID'];
-                    $image  = $row['IMAGE'];
-                    $title  = $row['TITLE'];
-                    $date   = $row['DATE'];
-                    $price          = $row['PRICE'];
-                    $discount       = $row['DISCOUNT'];
-                    $final_price    = $price-($price*($discount/100));
-                    $final_price = $price-($price*($discount/100));
-                    if($discount  > 0)
-                    {
-                        echo '
+        <div class="main-box box-inline">
+            <?php
+            $comm = "SELECT * FROM `kroma`";
+            $result = mysqli_query($conn, $comm);
+            while ($row = mysqli_fetch_assoc($result)) {
+            $id     = $row['ID'];
+            $image  = $row['IMAGE'];
+            $title  = $row['TITLE'];
+            $date   = $row['DATE'];
+            $price          = $row['PRICE'];
+            $discount       = $row['DISCOUNT'];
+            $final_price    = $price - ($price * ($discount / 100));
+            $final_price = $price - ($price * ($discount / 100));
+            if ($discount  > 0) {
+                    echo '
                         <div class="box-product">
-                            <img src="'.$image.'" alt="">
+                            <img src="' . $image . '" alt="">
                             <div class="box-detail">
-                                <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
-                                <span><p style="color:red;text-decoration:line-through;">$'.$price.'</p></span>
-                                <span><p style="color:blue;">$'.$final_price.'</p><p style="color:red;text-decoration:line-through;">%'.$discount.'</p></span>
-                                <span><a class="btn btn-outline-warning" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="./kroma_product_Detail.php?id='.$id.' ">Detail</a></span>
+                                <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
+                                <span><p style="color:red;text-decoration:line-through;">$' . $price . '</p></span>
+                                <span><p style="color:black;">$' . $final_price . '</p><p style="color:red;text-decoration:line-through;">%' . $discount . '</p></span>
+                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a class="btn btn-outline-secondary" href="./kroma_product_Detail.php?id=' . $id . ' ">Detail</a></span>
                             </div>
                         </div> 
                         ';
-                    }else 
-                    {
-                        echo '
-                        <div class="box-product">
-                            <img src="'.$image.'" alt="">
-                            <div class="box-detail">
-                                <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
-                                <span><p style="color:blue;">$'.$price.'</p></span>
-                                <span><a style="margin-top: 35px;" class="btn btn-outline-warning" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary" href="./kroma_product_Detail.php?id='.$id.' ">Detail</a></span>
-                            </div>
-                        </div> 
+                } else {
+                    echo '
+                            <div class="box-product">
+                                <img src="' . $image . '" alt="">
+                                <div class="box-detail">
+                                    <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
+                                    <span><p style="color:blue;">$' . $price . '</p></span>
+                                    <span><a style="margin-top: 35px;" class="btn btn-outline-success" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary" href="./kroma_product_Detail.php?id=' . $id . ' ">Detail</a></span>
+                                </div>
+                            </div> 
                         ';
-                    }
                 }
-            ?>        
+            }
+            ?>
         </div>
     </div>
     <!-- start khourm products -->
-    <h2>Khourm PRODUCT</h2>
+    <h2>Khourm Products</h2>
     <div class="main-card">
         <div class="main-box box-inline">
-            <?php 
-                $comm = "SELECT * FROM `khourm`";
-                $result = mysqli_query($conn,$comm);
+            <?php
+            $comm = "SELECT * FROM `khourm`";
+            $result = mysqli_query($conn, $comm);
 
-                while($row = mysqli_fetch_assoc($result)){
-                    $id     = $row['ID'];
-                    $image  = $row['IMAGE'];
-                    $title  = $row['TITLE'];
-                    $date   = $row['DATE'];
-                    $price          = $row['PRICE'];
-                    $discount       = $row['DISCOUNT'];
-                    $final_price    = $price-($price*($discount/100));
-                    if($discount  > 0)
-                    {
-                        echo '
-
+            while ($row = mysqli_fetch_assoc($result)) {
+                $id     = $row['ID'];
+                $image  = $row['IMAGE'];
+                $title  = $row['TITLE'];
+                $date   = $row['DATE'];
+                $price          = $row['PRICE'];
+                $discount       = $row['DISCOUNT'];
+                $final_price    = $price - ($price * ($discount / 100));
+                if ($discount  > 0) {
+                    echo '
                         <div class="box-product">
-                            <img src="'.$image.'" alt="">
+                            <img src="' . $image . '" alt="">
                             <div class="box-detail">
-                                <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
-                                <span><p style="color:red;text-decoration:line-through;">$'.$price.'</p></span>
-                                <span><p style="color:blue;">$'.$final_price.'</p><p style="color:red;text-decoration:line-through;">%'.$discount.'</p></span>
-                                <span><a class="btn btn-outline-warning" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="./khourm_product_Detail.php?id='.$id.'">Detail</a></span>
+                                <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
+                                <span><p style="color:red;text-decoration:line-through;">$' . $price . '</p></span>
+                                <span><p style="color:black;">$' . $final_price . '</p><p style="color:red;text-decoration:line-through;">%' . $discount . '</p></span>
+                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="./khourm_product_Detail.php?id=' . $id . '">Detail</a></span>
                             </div>
                             
                         </div> 
-                        
                         ';
-                    }else
-                    {
-                        echo '
-
+                } else {
+                    echo '
                         <div class="box-product">
-                            <img src="'.$image.'" alt="">
+                            <img src="' . $image . '" alt="">
                             <div class="box-detail">
-                                <span><strong>'.$title.'</strong><p>'.$date.'</p></span>
-                                <span><p style="color:blue;">$'.$price.'</p></span>
-                                <span><a style="margin-top: 35px;" class="btn btn-outline-warning" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary"  href="./khourm_product_Detail.php?id='.$id.'">Detail</a></span>
+                                <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
+                                <span><p style="color:blue;">$' . $price . '</p></span>
+                                <span><a style="margin-top: 35px;" class="btn btn-outline-success" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary"  href="./khourm_product_Detail.php?id=' . $id . '">Detail</a></span>
                             </div>
                         </div> 
-                        
                         ';
-                    }
-                
                 }
-                
-            ?>        
+            }
+            ?>
         </div>
     </div>
 </body>

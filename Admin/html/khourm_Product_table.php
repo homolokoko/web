@@ -73,7 +73,7 @@
                           <td> <span>'.$date.'</span> </td>
                           <td>
                               <a href="./khourm_Product_update.php?id='.$id.' " class="btnView">View</a>
-                              <a href="../Controler/khourm_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
+                              <a href="../Controller/khourm_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
                           </td>
                       </tr>
                       ' ;

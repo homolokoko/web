@@ -73,7 +73,7 @@
                           <td> <span>'.$date.'</span> </td>
                           <td>
                               <a href="./kroma_Product_update.php?id='.$id.' " class="btnView">View</a>
-                              <a href="../Controler/kroma_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
+                              <a href="../Controller/kroma_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
                           </td>
                       </tr>
                       ' ;

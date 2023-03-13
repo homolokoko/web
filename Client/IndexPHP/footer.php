@@ -17,8 +17,6 @@
                         <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-
-
                 <div class="col" id="services">
                     <h3>Services</h3>
                     <div class="links">
@@ -27,7 +25,6 @@
                         <a href="#">Support Khmer Products</a>
                     </div>
                 </div>
-
                 <div class="col" id="useful-links">
                     <h3>Links</h3>
                     <div class="links">
@@ -36,7 +33,6 @@
                         <a href="#">Help</a>
                     </div>
                 </div>
-
                 <div class="col" id="contact">
                     <h3>Contact</h3>
                     <div class="contact-details">

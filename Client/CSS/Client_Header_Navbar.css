@@ -12,14 +12,13 @@ body {
     min-height: 100vh;
     background: #f4f3f3;
 }
-
 header {
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px;
-    background: black;
+    background-color: black;
 }
 header .header-left {
     display: flex;
@@ -34,7 +33,8 @@ header .header-left .logo {
     color: white;
 }
 header .header-left nav {
-    margin-left: 335px;
+    margin-left: 350px;
+    margin-top: 20px;
 }
 header .header-left nav ul {
     display: flex;
@@ -155,7 +155,7 @@ header .header-right .hamburger div {
         left: 0;
         width: 100%;
         height: fit-content;
-        background-color: #9e2a2b;
+        background-color: black;
         padding: 30px;
         transition: 0.3s;
         text-align: center;
