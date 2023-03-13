@@ -20,7 +20,7 @@
             <!-- ​Furniture type -->
             <a href="./kroma_Insert_product.php">
                 <div class="card productCard">
-                    <img src="../image/Body_Image/image1.jpeg" 
+                    <img src="../image/new_image/1655806680best-furniture-stores-in-bangalore-banner.jpg" 
                         class="card-img-top"
                         alt="img">
                     <div class="card-body myletters">
@@ -34,7 +34,7 @@
             <!-- luxury Furniture type -->
             <a href="./khourm_Insert_product.php">
                 <div class="card productCard">
-                    <img src="../image/Body_Image/image1.jpeg" 
+                    <img src="../image/new_image/download (1).jpg" 
                         class="card-img-top"
                         alt="img">
                     <div class="card-body myletters">
