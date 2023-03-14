@@ -15,7 +15,7 @@
             <!-- Start Detail main -->
                 <?php
                     $id = $_GET['id'];
-                    $res = mysqli_query($conn,"SELECT * FROM `kroma` WHERE ID = $id");
+                    $res = mysqli_query($conn,"SELECT * FROM `furniture_product` WHERE ID = $id");
                     while($row=mysqli_fetch_array($res))
                     { 
                         $Title      =$row["TITLE"];
@@ -107,7 +107,7 @@
                 <div class="contain_sug">
                     <?php
                         $id = $_GET['id'];
-                        $res = mysqli_query($conn,"SELECT * FROM `kroma` LIMIT 3;");
+                        $res = mysqli_query($conn,"SELECT * FROM `furniture_product` LIMIT 3;");
                         while($row=mysqli_fetch_array($res))
                         {
                             $Title      =$row["TITLE"];

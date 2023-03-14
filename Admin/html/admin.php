@@ -33,7 +33,7 @@
     <?php include('./footer.php'); ?>
 
     <!-- Dash bord goes here -->
-    <div class="container myclass mt-3 me-6">
+    <div class="container myclass mt-5 me-10">
         <div class="row">
             <div class="col-md-12">
                 <?php include('../html/add-item.php'); ?>

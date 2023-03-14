@@ -18,7 +18,7 @@
         <h1>CHOOSE  PRODUCT TYPE TO INSERT</h1>
         <div class="contain_pro_types">
             <!-- ​Furniture type -->
-            <a href="./kroma_Insert_product.php">
+            <a href="./FURNITURE_PRODUCT_Insert_product.php">
                 <div class="card productCard">
                     <img src="../image/new_image/1655806680best-furniture-stores-in-bangalore-banner.jpg" 
                         class="card-img-top"
@@ -32,7 +32,7 @@
                 </div>
             </a>
             <!-- luxury Furniture type -->
-            <a href="./khourm_Insert_product.php">
+            <a href="./LY_FURNITURE_PRODUCT_Insert_product.php">
                 <div class="card productCard">
                     <img src="../image/new_image/download (1).jpg" 
                         class="card-img-top"

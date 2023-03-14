@@ -17,7 +17,7 @@
         <h1>CHOOSE PRODUCT TYPE TO VIEW</h1>
         <div class="contain_pro_types">
             <!-- kroma type -->
-            <a href="./kroma_Product_table.php">
+            <a href="./FURNITURE_PRODUCT_Product_table.php">
                 <div class="card productCard">
                     <img src="../image/new_image/1655806680best-furniture-stores-in-bangalore-banner.jpg" 
                         class="card-img-top"
@@ -31,7 +31,7 @@
                 </div>
             </a>
             <!-- khorm type -->
-            <a href="./khourm_Product_table.php">
+            <a href="./LY_FURNITURE_PRODUCT_Product_table.php">
                 <div class="card productCard">
                     <img src="../image/new_image/download (1).jpg" 
                         class="card-img-top"

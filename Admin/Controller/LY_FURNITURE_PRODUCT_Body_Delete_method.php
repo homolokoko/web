@@ -7,17 +7,17 @@
         <script>
             if (confirm("Are you sure ?") == true) 
             {
+                //ly_furniture_product
                 <?php
-                    mysqli_query($conn,"DELETE FROM `khourm` WHERE id=$id");
-                    header("Location: ../html/khourm_Product_table.php");
+                    mysqli_query($conn,"DELETE FROM `ly_furniture_product` WHERE id=$id");
+                    header("Location: ../html/LY_FURNITURE_PRODUCT_Product_table.php");
                 ?>
             } else 
             {
                 <?php
-                    header("Location: ../html/khourm_Product_table.php");
+                    header("Location: ../html/LY_FURNITURE_PRODUCT_Product_table.php");
                 ?>
             }
         </script>
     <?php
 ?>
-  

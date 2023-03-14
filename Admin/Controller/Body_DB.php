@@ -1,6 +1,6 @@
 <?php
     $Api = 'localhost';
-    $ApiDBName = 'branstore';
+    $ApiDBName = 'boran_store';
     $ApiRoot = 'root';
     /**
      * Password if you have

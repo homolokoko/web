@@ -11,7 +11,7 @@
   <nav class="navbar navbar-expand-sm bg-gradient-dark navbar-dark">
     <div class="container-fluid flex dropdown ">
       <div class="e"></div>
-      <a class="navbar-brand me-10 d-block link-dark text-decoration-none dropdown-toggle show" href="#" >
+      <a class="navbar-brand me-10 d-block link-dark text-decoration-none" href="#" >
         <img src="../image/Users_account/success.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
       </a>
   </nav>

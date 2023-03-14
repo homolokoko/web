@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/material-dashboard.min.css">
     <!-- css goes here -->
-    <link rel="stylesheet" href="../css/kroma_Product_table.css">
+    <link rel="stylesheet" href="../css/Product_table.css">
 </head>
 <body>
   <!-- include sidebar and header here -->
@@ -25,7 +25,7 @@
         <!-- letters  -->
         <h3>MANAGERMENT TOOL</h3>
         <!-- add more product btn -->
-        <a class="btnAdd" href="./khourm_Insert_product.php">ADD MORE</a>
+        <a class="btnAdd" href="./FURNITURE_PRODUCT_Insert_product.php">ADD MORE</a>
       </div>
     </div>
     <div class="mytable">
@@ -46,7 +46,7 @@
           </thead>
           <tbody>
             <?php
-              $comm = "SELECT * FROM `khourm`";
+              $comm = "SELECT * FROM `furniture_product`";
               $result = mysqli_query($conn,$comm);
 
               while($row = mysqli_fetch_assoc($result))
@@ -72,8 +72,8 @@
                           <td> <span>'.$qty.'</span> </td>
                           <td> <span>'.$date.'</span> </td>
                           <td>
-                              <a href="./khourm_Product_update.php?id='.$id.' " class="btnView">View</a>
-                              <a href="../Controller/khourm_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
+                              <a href="./FURNITURE_PRODUCT_Product_update.php?id='.$id.' " class="btnView">View</a>
+                              <a href="../Controller/FURNITURE_PRODUCT_Body_Delete_method.php?id='.$id.' " onclick="return confirmDelete()" class="btnDelete">Delete</a>
                           </td>
                       </tr>
                       ' ;

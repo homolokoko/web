@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"/>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
-    <link rel="stylesheet" href="../css/kroma_Insert_product.css">
+    <link rel="stylesheet" href="../css/Insert_product.css">
     <link rel="stylesheet" href="../css/material-dashboard.min.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
         include( "./bodySidebar.php");
     ?>
 <div class="Main_Container">
-        <h1 class="text-uppercase" style="color: #9b2226;" >INSERT Furniture PRODUCT </h1>
+        <h1 class="text-uppercase" style="color: #9b2226;" >INSERT luxury Furniture PRODUCT </h1>
         <div class="contain_form">
             <div class="right_Card">
                 <form class="form-style-9" action="" method="post" name="form1" enctype="multipart/form-data">
@@ -68,6 +68,6 @@
         $dst1 = "../../product_image_storage/".$fnm; 
         $date = date('Y-m-d');
         move_uploaded_file($_FILES["myImage"]["tmp_name"],$dst);
-        mysqli_query($conn,"INSERT into `kroma` values(NULL,'$_POST[Title]','$_POST[Qty]','$_POST[Price]','$_POST[Discount]','$_POST[Size]','$date','$dst1')");
+        mysqli_query($conn,"INSERT into `ly_furniture_product` values(NULL,'$_POST[Title]','$_POST[Qty]','$_POST[Price]','$_POST[Discount]','$_POST[Size]','$date','$dst1')");
     }
 ?>

@@ -1,4 +1,3 @@
-
 <?php
 include '../DB/Body_DB.php';
 ?>
@@ -46,13 +45,13 @@ include '../DB/Body_DB.php';
                 <h5>Krorma</h5>
             </div>
         </div>
-    </div><a href="./product_Detail.php"></a>
-    <!-- start krorma products -->
-    <h2 style="margin-top: 20px;">KRORMA PRODUCT</h2>
+    </div>
+    <!-- start furniture products -->
+    <h2 style="margin-top: 20px;">furniture PRODUCT</h2>
     <div class="main-card">
         <div class="main-box box-inline">
             <?php
-            $comm = "SELECT * FROM `kroma`";
+            $comm = "SELECT * FROM `furniture_product`";
             $result = mysqli_query($conn, $comm);
             while ($row = mysqli_fetch_assoc($result)) {
             $id     = $row['ID'];
@@ -71,7 +70,7 @@ include '../DB/Body_DB.php';
                                 <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
                                 <span><p style="color:red;text-decoration:line-through;">$' . $price . '</p></span>
                                 <span><p style="color:black;">$' . $final_price . '</p><p style="color:red;text-decoration:line-through;">%' . $discount . '</p></span>
-                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a class="btn btn-outline-secondary" href="./kroma_product_Detail.php?id=' . $id . ' ">Detail</a></span>
+                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a class="btn btn-outline-secondary" href="./FURNITUR_product_Detail.php?id=' . $id . ' ">Detail</a></span>
                             </div>
                         </div> 
                         ';
@@ -82,7 +81,7 @@ include '../DB/Body_DB.php';
                                 <div class="box-detail">
                                     <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
                                     <span><p style="color:blue;">$' . $price . '</p></span>
-                                    <span><a style="margin-top: 35px;" class="btn btn-outline-success" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary" href="./kroma_product_Detail.php?id=' . $id . ' ">Detail</a></span>
+                                    <span><a style="margin-top: 35px;" class="btn btn-outline-success" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary" href="./FURNITUR_product_Detail.php?id=' . $id . ' ">Detail</a></span>
                                 </div>
                             </div> 
                         ';
@@ -92,11 +91,11 @@ include '../DB/Body_DB.php';
         </div>
     </div>
     <!-- start khourm products -->
-    <h2>Khourm Products</h2>
+    <h2> Luxery furniture Products</h2>
     <div class="main-card">
         <div class="main-box box-inline">
             <?php
-            $comm = "SELECT * FROM `khourm`";
+            $comm = "SELECT * FROM `ly_furniture_product`";
             $result = mysqli_query($conn, $comm);
 
             while ($row = mysqli_fetch_assoc($result)) {
@@ -115,7 +114,7 @@ include '../DB/Body_DB.php';
                                 <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
                                 <span><p style="color:red;text-decoration:line-through;">$' . $price . '</p></span>
                                 <span><p style="color:black;">$' . $final_price . '</p><p style="color:red;text-decoration:line-through;">%' . $discount . '</p></span>
-                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="./khourm_product_Detail.php?id=' . $id . '">Detail</a></span>
+                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="./LY_FURNITURE_product_Detail.php?id='. $id .'">Detail</a></span>
                             </div>
                             
                         </div> 
@@ -127,7 +126,7 @@ include '../DB/Body_DB.php';
                             <div class="box-detail">
                                 <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
                                 <span><p style="color:blue;">$' . $price . '</p></span>
-                                <span><a style="margin-top: 35px;" class="btn btn-outline-success" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary"  href="./khourm_product_Detail.php?id=' . $id . '">Detail</a></span>
+                                <span><a style="margin-top: 35px;" class="btn btn-outline-success" href="">Add to cart</a><a style="margin-top: 35px;"  class="btn btn-outline-secondary"  href="./LY_FURNITURE_product_Detail.php?id=' . $id . '">Detail</a></span>
                             </div>
                         </div> 
                         ';
