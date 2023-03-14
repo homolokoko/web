@@ -10,7 +10,7 @@
         include('./Client_Header_navbar.php'); 
     ?>
     <!-- contain detail goes here -->
-    <div class="main_contain">
+    <div class="main_contain bg-danger">
         <div class="container">
             <!-- Start Detail main -->
                 <?php
@@ -132,4 +132,5 @@
         </div>
     </div>
 </body>
+ 
 </html>
