@@ -17,7 +17,7 @@
         include( "./bodySidebar.php");
     ?>
 <div class="Main_Container">
-        <h1>INSERT KHOURM PRODUCT </h1>
+        <h1 class="text-uppercase" style="color: #ee9b00;" >INSERT luxury Furniture PRODUCT </h1>
         <div class="contain_form">
             <div class="right_Card">
                 <form class="form-style-9" action="" method="post" name="form1" enctype="multipart/form-data">

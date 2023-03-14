@@ -18,41 +18,28 @@
         <div class="contain_pro_types">
             <!-- kroma type -->
             <a href="./kroma_Product_table.php">
-                <div class="card productCard" style="width:20rem;">
-                    <img src="../image/Body_Image/image1.jpeg" 
+                <div class="card productCard">
+                    <img src="../image/new_image/1655806680best-furniture-stores-in-bangalore-banner.jpg" 
                         class="card-img-top"
                         alt="img">
-                    <div class="card-body">
-                        <h4>kroma product type</h4>
-                        <p class="card-text">
-                            View your kroma product here
+                    <div class="card-body myletters">
+                        <h4 class="text-uppercase" >Furniture product type</h4>
+                        <p class="card-text text-uppercase">
+                            VIEW your Furniture product here
                         </p>
                     </div>
                 </div>
             </a>
             <!-- khorm type -->
             <a href="./khourm_Product_table.php">
-                <div class="card productCard" style="width:20rem;">
-                    <img src="../image/Body_Image/image2.jpeg" 
-                        class="card-img-top " alt="img">
-                    <div class="card-body">
-                        <h4>khorm product type</h4>
-                        <p class="card-text">
-                            View your khorm product here
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <!-- sot type -->
-            <a href="">
-                <div class="card productCard" style="width:20rem;">
-                    <img src="../image/Body_Image/sot.jpg" 
+                <div class="card productCard">
+                    <img src="../image/new_image/download (1).jpg" 
                         class="card-img-top"
                         alt="img">
-                    <div class="card-body">
-                        <h4>sot product type</h4>
-                        <p class="card-text">
-                            View your sot product here
+                    <div class="card-body myletters ">
+                        <h4>luxury Furniture product type</h4>
+                        <p class="card-text text-uppercase">
+                            VIEW your luxury Furniture product here
                         </p>
                     </div>
                 </div>

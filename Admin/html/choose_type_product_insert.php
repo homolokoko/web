@@ -17,43 +17,30 @@
     <div class="Main_container">
         <h1>CHOOSE  PRODUCT TYPE TO INSERT</h1>
         <div class="contain_pro_types">
-            <!-- kroma type -->
+            <!-- ​Furniture type -->
             <a href="./kroma_Insert_product.php">
-                <div class="card productCard" style="width:20rem;">
-                    <img src="../image/Body_Image/image1.jpeg" 
+                <div class="card productCard">
+                    <img src="../image/new_image/1655806680best-furniture-stores-in-bangalore-banner.jpg" 
                         class="card-img-top"
                         alt="img">
-                    <div class="card-body">
-                        <h4>kroma product type</h4>
+                    <div class="card-body myletters">
+                        <h4>Furniture product type</h4>
                         <p class="card-text">
-                            Insert your kroma product here
+                            Insert your Furniture product here
                         </p>
                     </div>
                 </div>
             </a>
-            <!-- khourm type -->
+            <!-- luxury Furniture type -->
             <a href="./khourm_Insert_product.php">
-                <div class="card productCard" style="width:20rem;">
-                    <img src="../image/Body_Image/image2.jpeg" 
-                        class="card-img-top " alt="img">
-                    <div class="card-body">
-                        <h4>khorm product type</h4>
-                        <p class="card-text">
-                            Insert your khorm product here
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <!-- sot type -->
-            <a href="">
-                <div class="card productCard" style="width:20rem;">
-                    <img src="../image/Body_Image/sot.jpg" 
+                <div class="card productCard">
+                    <img src="../image/new_image/download (1).jpg" 
                         class="card-img-top"
                         alt="img">
-                    <div class="card-body">
-                        <h4>sot product type</h4>
+                    <div class="card-body myletters">
+                        <h4>luxury Furniture product type</h4>
                         <p class="card-text">
-                            Insert your sot product here
+                            Insert your luxury Furniture product here
                         </p>
                     </div>
                 </div>

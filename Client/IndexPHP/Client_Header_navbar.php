@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,11 +53,11 @@
         </div>
     </header>
 </body>
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        nav = document.querySelector("nav");
-        hamburger.onclick = function () 
-        {
-            nav.classList.toggle("active");
-        }
-    </script>
+<script>
+    hamburger = document.querySelector(".hamburger");
+    nav = document.querySelector("nav");
+    hamburger.onclick = function () 
+    {
+        nav.classList.toggle("active");
+    }
+</script>
