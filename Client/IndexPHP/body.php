@@ -152,7 +152,7 @@ include '../DB/Body_DB.php';
                 $final_price    = $price - ($price * ($discount / 100));
                 if ($discount  > 0) {
                     echo '
-                        <div class="col-md-4 productCard mt-5 mb-5" style="width: 400px;">
+                        <div class="col-md-4 productCard mt-5 mb-5"  style="width: 500px;">
                             <div class="bbb_deals">
                                 <div class="ribbon ribbon-top-right"><span><small class="cross">x </small>'.$qty.'</span></div>
                                 <div class="bbb_deals_title text-uppercase">LUXURY FURNITURE</div>
@@ -186,7 +186,7 @@ include '../DB/Body_DB.php';
                 }else
                 {
                     echo '
-                        <div class="col-md-4 productCard mt-5 mb-5" style="width: 400px;">
+                        <div class="col-md-4 productCard mt-5 mb-5"  style="width: 500px;">
                             <div class="bbb_deals">
                                 <div class="ribbon ribbon-top-right"><span><small class="cross">x </small>'.$qty.'</span></div>
                                 <div class="bbb_deals_title text-uppercase">LUXURY FURNITURE</div>
