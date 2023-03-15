@@ -40,13 +40,13 @@
                         {
                             echo '
                                     <div class="contain_detail">
-                                        <h2>Title = <span>&nbsp; '.$Title.'  </span> </h2>
-                                        <h2>Size = <span>&nbsp;&nbsp; '.$Size.' </span> </h2>
-                                        <h2>Price = <span>&nbsp;'.$Price.' </span>  </h2>
-                                        <h2>Discount = <span>&nbsp; '.$Discount.' </span> </h2>
-                                        <h2>Final price = <span>&nbsp;'.$final_price.' </span> </h2>
-                                        <h2>Quantity = <span>&nbsp; '.$Qty.' </span> </h2>
-                                        <h2>Date = <span>&nbsp; '.$Date.' </span> </h2>
+                                        <h2>Title : <span>&nbsp; '.$Title.'  </span> </h2>
+                                        <h2>Size : <span>&nbsp;&nbsp; '.$Size.' </span> </h2>
+                                        <h2>Price : <span>&nbsp;'.$Price.' </span>  </h2>
+                                        <h2>Discount : <span>&nbsp; '.$Discount.' </span> </h2>
+                                        <h2>Final price : <span>&nbsp;'.$final_price.' </span> </h2>
+                                        <h2>Quantity : <span>&nbsp; '.$Qty.' </span> </h2>
+                                        <h2>Date : <span>&nbsp; '.$Date.' </span> </h2>
                                     </div>
                                 ';
                         }else
@@ -102,7 +102,7 @@
             <!-- Start sugg Prod -->
             <div class="sugg-prod">
                 <div class="contain_letters">
-                    <h1>Suggest product</h1>
+                    <h1>Suggest Products</h1>
                 </div>
                 <div class="contain_sug">
                     <?php
@@ -131,6 +131,9 @@
             <!-- End sugg Prod -->
         </div>
     </div>
+    <?php
+     include('./footer.php')
+    ?>
 </body>
  
 </html>
