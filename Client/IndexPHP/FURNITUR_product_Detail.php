@@ -10,8 +10,8 @@
         include('./Client_Header_navbar.php'); 
     ?>
     <!-- contain detail goes here -->
-    <div class="main_contain bg-danger">
-        <div class="container">
+    <div class="main_contain">
+        <div class="container mycontainer">
             <!-- Start Detail main -->
                 <?php
                     $id = $_GET['id'];
@@ -40,19 +40,19 @@
                         {
                             echo '
                                     <div class="contain_detail">
-                                        <h2>Title = <span>&nbsp; '.$Title.'  </span> </h2>
-                                        <h2>Size = <span>&nbsp;&nbsp; '.$Size.' </span> </h2>
-                                        <h2>Price = <span>&nbsp;'.$Price.' </span>  </h2>
-                                        <h2>Discount = <span>&nbsp; '.$Discount.' </span> </h2>
-                                        <h2>Final price = <span>&nbsp;'.$final_price.' </span> </h2>
-                                        <h2>Quantity = <span>&nbsp; '.$Qty.' </span> </h2>
-                                        <h2>Date = <span>&nbsp; '.$Date.' </span> </h2>
+                                        <h2>Title : <span>&nbsp; '.$Title.'  </span> </h2>
+                                        <h2>Size : <span>&nbsp;&nbsp; '.$Size.' </span> </h2>
+                                        <h2>Price : <span>&nbsp;'.$Price.' </span>  </h2>
+                                        <h2>Discount : <span>&nbsp; '.$Discount.' </span> </h2>
+                                        <h2>Final price : <span>&nbsp;'.$final_price.' </span> </h2>
+                                        <h2>Quantity : <span>&nbsp; '.$Qty.' </span> </h2>
+                                        <h2>Date : <span>&nbsp; '.$Date.' </span> </h2>
                                     </div>
                                 ';
                         }else
                         {
                             echo '
-                                    <div class="contain_detail">
+                                    <div class="contain_detail" >
                                         <h2>Title = <span>&nbsp;'.$Title.' </span> </h2>
                                         <h2>Size = <span>&nbsp;&nbsp;'.$Size.' </span> </h2>
                                         <h2>Price = <span>&nbsp;'.$Price.' </span> </h2>
@@ -75,34 +75,11 @@
                             </div>
                         ';
                 ?>
-            <!-- Start Order Prod -->
-            <div class="order-prod">
-                <div class="order-prod-title">
-                    <h3>Order Products</h3>
-                </div>
-                <div class="pro_types">
-                    <div class="title">
-                        <h4>See kroma product more</h4>
-                    </div>
-                    <img src="../image/Body_Image/image1.jpeg" alt="">
-                </div>
-                <div class="pro_types">
-                    <div class="title">
-                        <h4>See khourm product more</h4>
-                    </div>
-                    <img src="../image/Body_Image/image2.jpeg" alt="">
-                </div>
-                <div class="pro_types">
-                    <div class="title">
-                        <h4>See sot product more</h4>
-                    </div>
-                    <img src="../image/Body_Image/image3.jpeg" alt="">
-                </div>
-            </div>
+            
             <!-- Start sugg Prod -->
             <div class="sugg-prod">
                 <div class="contain_letters">
-                    <h1>Suggest product</h1>
+                    <h1>Suggest Products</h1>
                 </div>
                 <div class="contain_sug">
                     <?php
@@ -131,8 +108,8 @@
             <!-- End sugg Prod -->
         </div>
     </div>
-    <?php 
-        include('./footer.php');
+    <?php
+     include('./footer.php')
     ?>
 </body>
  

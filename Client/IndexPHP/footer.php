@@ -6,7 +6,7 @@
 </head>
 <body>
     <footer>
-        <div class="container">
+        <div class="container FootContain">
             <div class="row">
                 <div class="col" id="company">
                     <img src="../image/footer/Logo.png" alt="" class="logo">

@@ -16,9 +16,8 @@
     <?php
          include "./body.php";
        ?>
-    <!-- Footer go here  -->
-    <?php
-         include "./footer.php";
+   <?php
+        include('./footer.php');
        ?>
    
 </body>
