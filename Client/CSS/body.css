@@ -1,20 +1,14 @@
-/* for product cart */
-* 
-{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+html,
+body {
+    height: 100%
 }
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');html,
-body 
-{
-    height: 100%;
+
+body {
     display: grid;
     background: #fff;
-    font-family: 'Manrope', sans-serif;
-    min-height: 100%;
-    padding-bottom: 60px; /* Height of the footer */
-    position: relative;
+    font-family: 'Manrope', sans-serif
 }
 
 .mydiv 
@@ -231,13 +225,25 @@ div {
 
 
 
-/*  for body */
+
+
+
+
+
+/*   */
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Playfair+Display&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
 
 .body {
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 620px;
 }
 
 .body-container {
