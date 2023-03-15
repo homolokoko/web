@@ -69,6 +69,7 @@
         $dst1 = "../../product_image_storage/".$fnm; 
         $date = date('Y-m-d');
         move_uploaded_file($_FILES["myImage"]["tmp_name"],$dst);
-        mysqli_query($conn,"INSERT into `furniture_product` values(NULL,'$_POST[Title]','$_POST[Qty]','$_POST[Price]','$_POST[Discount]','$_POST[Size]','$date','$dst1')");
+        mysqli_query($conn,"INSERT INTO `furniture_product`(TITLE,QTY,PRICE,DISCOUNT,SIZE,IMAGE)
+                                        VALUES ('$_POST[Title]','$_POST[Qty]','$_POST[Price]','$_POST[Discount]','$_POST[Size]','$dst1')");
     }
 ?>

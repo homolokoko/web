@@ -91,7 +91,7 @@ include '../DB/Body_DB.php';
         </div>
     </div>
     <!-- start khourm products -->
-    <h2> Luxery furniture Products</h2>
+    <h2> Luxury furniture Products</h2>
     <div class="main-card">
         <div class="main-box box-inline">
             <?php
