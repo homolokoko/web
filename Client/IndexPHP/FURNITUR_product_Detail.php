@@ -131,6 +131,9 @@
             <!-- End sugg Prod -->
         </div>
     </div>
+    <?php 
+        include('./footer.php');
+    ?>
 </body>
  
 </html>
