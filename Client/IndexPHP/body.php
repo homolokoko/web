@@ -17,11 +17,55 @@ include '../DB/Body_DB.php';
 </head>
 
 <body>
-    <div class="body" style="margin-top: 25px;">
+    <!-- <div class="body" style="margin-top: 25px;">
         <div class="body-container" style="border-radius: 10px;">
             <img src="../image/footer/image1.jpg" alt="">
         </div>
-    </div>
+    </div> -->
+
+<!-- start of banner slide -->
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="st first">
+                    <img src="../image/Body_Image/Banner1.jpg" alt="">
+                </div>
+                <div class="st">
+                    <img src="../image/Body_Image/Banner2.jpg" alt="">
+                </div>
+                <div class="st">
+                    <img src="../image/Body_Image/Banner3.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                </div>
+
+                <div class="nav m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+<!-- end of banner slide -->
     <div class="title">
         <h2>PRODUCT-STORE</h2>
         <h4>Here you can check all of our products</h4>
@@ -54,15 +98,15 @@ include '../DB/Body_DB.php';
             $comm = "SELECT * FROM `furniture_product`";
             $result = mysqli_query($conn, $comm);
             while ($row = mysqli_fetch_assoc($result)) {
-            $id     = $row['ID'];
-            $image  = $row['IMAGE'];
-            $title  = $row['TITLE'];
-            $date   = $row['DATE'];
-            $price          = $row['PRICE'];
-            $discount       = $row['DISCOUNT'];
-            $final_price    = $price - ($price * ($discount / 100));
-            $final_price = $price - ($price * ($discount / 100));
-            if ($discount  > 0) {
+                $id     = $row['ID'];
+                $image  = $row['IMAGE'];
+                $title  = $row['TITLE'];
+                $date   = $row['DATE'];
+                $price          = $row['PRICE'];
+                $discount       = $row['DISCOUNT'];
+                $final_price    = $price - ($price * ($discount / 100));
+                $final_price = $price - ($price * ($discount / 100));
+                if ($discount  > 0) {
                     echo '
                         <div class="box-product">
                             <img src="' . $image . '" alt="">
@@ -114,7 +158,7 @@ include '../DB/Body_DB.php';
                                 <span><strong>' . $title . '</strong><p>' . $date . '</p></span>
                                 <span><p style="color:red;text-decoration:line-through;">$' . $price . '</p></span>
                                 <span><p style="color:black;">$' . $final_price . '</p><p style="color:red;text-decoration:line-through;">%' . $discount . '</p></span>
-                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="./LY_FURNITURE_product_Detail.php?id='. $id .'">Detail</a></span>
+                                <span><a class="btn btn-outline-success" href="">Add to cart</a><a  class="btn btn-outline-secondary" href="./LY_FURNITURE_product_Detail.php?id=' . $id . '">Detail</a></span>
                             </div>
                             
                         </div> 
