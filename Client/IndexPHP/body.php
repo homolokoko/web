@@ -16,13 +16,55 @@ include '../DB/Body_DB.php';
     <link rel="stylesheet" href="../CSS/body.css">
 </head>
 <body>
-
-    <div class="body" style="margin-top: 25px;">
+    <!-- <div class="body" style="margin-top: 25px;">
         <div class="body-container" style="border-radius: 10px;">
             <img src="../image/footer/image1.jpg" alt="">
         </div>
-    </div>
-    
+    </div> -->
+
+<!-- start of banner slide -->
+    <section class="section">
+        <div class="slider">
+            <div class="slide">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <div class="st first">
+                    <img src="../image/Body_Image/Banner1.jpg" alt="">
+                </div>
+                <div class="st">
+                    <img src="../image/Body_Image/Banner2.jpg" alt="">
+                </div>
+                <div class="st">
+                    <img src="../image/Body_Image/Banner3.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                </div>
+
+                <div class="nav m">
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                    <label for="radio1" class="m-btn"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+<!-- end of banner slide -->
     <div class="title">
         <h1 class="d-flex justify-content-center">PRODUCT-STORE</h1>
         <h4 class="d-flex justify-content-center">Here you can check all of our products</h4>

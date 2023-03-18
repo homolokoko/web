@@ -22,7 +22,8 @@
                         $Qty        =$row["QTY"];
                         $Price      =$row["PRICE"];
                         $Discount   =$row["DISCOUNT"];
-                        $Size       =$row["SIZE"];
+                        $Width      =$row["WIDTH"];
+                        $Height     =$row["HEIGHT"];
                         $Date       =$row["DATE"];
                         $Image      =$row["IMAGE"];
                     }
@@ -41,7 +42,7 @@
                             echo '
                                     <div class="contain_detail">
                                         <h2>Title : <span>&nbsp; '.$Title.'  </span> </h2>
-                                        <h2>Size : <span>&nbsp;&nbsp; '.$Size.' </span> </h2>
+                                        <h2>Size : <span>&nbsp;'.$Width.'cm</span>&nbsp;X&nbsp;<span>'.$Height.'cm</span> </h2>
                                         <h2>Price : <span>&nbsp;'.$Price.' </span>  </h2>
                                         <h2>Discount : <span>&nbsp; '.$Discount.' </span> </h2>
                                         <h2>Final price : <span>&nbsp;'.$final_price.' </span> </h2>
@@ -54,7 +55,7 @@
                             echo '
                                     <div class="contain_detail" >
                                         <h2>Title = <span>&nbsp;'.$Title.' </span> </h2>
-                                        <h2>Size = <span>&nbsp;&nbsp;'.$Size.' </span> </h2>
+                                        <h2>Size : <span>&nbsp;'.$Width.'cm</span>&nbsp;X&nbsp;<span'.$Height.'cm</span> </h2>
                                         <h2>Price = <span>&nbsp;'.$Price.' </span> </h2>
                                         <h2>Quantity = <span>&nbsp;'.$Qty.' </span> </h2>
                                         <h2>Date = <span>&nbsp;'.$Date.'</span> </h2>
@@ -91,7 +92,8 @@
                             $Qty        =$row["QTY"];
                             $Price      =$row["PRICE"];
                             $Discount   =$row["DISCOUNT"];
-                            $Size       =$row["SIZE"];
+                            $Width       =$row["WIDTH"];
+                            $Height       =$row["HEIGHT"];
                             $Date       =$row["DATE"];
                             $Image      =$row["IMAGE"];
                             $final_price = $Price-($Price*($Discount/100)); 

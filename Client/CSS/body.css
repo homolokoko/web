@@ -238,6 +238,102 @@ div {
     padding: 0;
     font-family: poppins;
 }
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    justify-self: center;
+    align-items: center;
+}
+
+/* start of banner slide */
+.section{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+.slider{
+    width: 1120px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+.slide input{
+    display: none;
+}
+.st{
+    width: 20%;
+    transition: 2s;
+}
+.st img{
+    width: 1120px;
+    height: 600px;
+}
+.nav-m{
+    position: absolute;
+    width: 1120px;
+    margin-top: -40px;
+    justify-content: center;
+    display: flex;
+}
+.m-btn{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.m-btn:not(:last-child) {
+    margin-right: 30px;
+}
+.m-btn:hover{
+    background-color: rgb(255, 255, 255);
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+.nav-auto{
+    position: absolute;
+    width: 1120px;
+    margin-top: 560px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: black;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: black;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: black;
+}
+/* end of banner slide */
 
 .body {
     width: 100%;
@@ -246,7 +342,7 @@ div {
     height: 620px;
 }
 
-.body-container {
+/* .body-container {
     width: 1120px;
     height: 650px;
     overflow: hidden;
@@ -255,16 +351,9 @@ div {
 .body-container img {
     width: 100%;
     height: 100%;
-}
+} */
 
-.logo {
-    top: 20%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 233px;
-}
+
 
 .title {
     margin-top: 80px;

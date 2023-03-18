@@ -57,7 +57,8 @@
                   $date = $row['DATE'];
                   $price = $row['PRICE'];
                   $discount = $row['DISCOUNT'];
-                  $size = $row["SIZE"];
+                  $width = $row["WIDTH"];
+                  $height = $row["HEIGHT"];
                   $qty = $row["QTY"];
                   $final_price = $price-($price*($discount/100));
                   echo '
@@ -68,7 +69,7 @@
                           <td> <span>'.$price.'$</span> </td>
                           <td> <span class="my_dis" >'.$discount.'%</span> </td>
                           <td> <span>'.$final_price.'$ </span></td>
-                          <td> <span>'.$size.'mn</span> </td>
+                          <td> <span>'.$width.'cm</span> X <span>'.$height.'cm</span>  </td>
                           <td> <span>'.$qty.'</span> </td>
                           <td> <span>'.$date.'</span> </td>
                           <td>

@@ -67,13 +67,19 @@
 }
 .form-style-9 ul li span {
 	width: 120px;
-	height: 33px;
+	height: 42px;
 	background-color: rgb(202, 199, 193);
 	border-radius: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-right: 5px;
+	margin-left: 5px;
+}
+.containSize span
+{
+	width: 120px;
+	padding:0px 28px ;
 }
 .containBTN
 {

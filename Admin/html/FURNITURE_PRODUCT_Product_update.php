@@ -4,7 +4,8 @@
     $Title      ='';
     $Price      ='';
     $Discount   ='';
-    $Siz        ='';
+    $Width      ='';
+    $Height     ='';
     $Image      ='';
     $Date       ='';
     $Qty        ='';
@@ -16,7 +17,8 @@
         $Qty        =$row["QTY"];
         $Price      =$row["PRICE"];
         $Discount   =$row["DISCOUNT"];
-        $Size       =$row["SIZE"];
+        $Width      =$row["WIDTH"];
+        $Height     =$row["HEIGHT"];  
         $Date       =$row["DATE"];
         $Image      =$row["IMAGE"];
     }
@@ -67,8 +69,9 @@
                             <span>Discount</span> <input value="<?php echo $Discount; ?>"% name="Discount" class="field-style field-full align-left" placeholder="Discount" />
                         </li>
                         <!-- Size goes here -->
-                        <li>
-                            <span>Size</span><input value="<?php echo $Size ; ?>" name="Size" class="field-style field-full align-left" placeholder="Size" />
+                        <li class="d-flex containSize" >
+                            <span>Width</span><input value="<?php echo $Width; ?>" name="Width" class="field-style field-full align-left" placeholder="Width"/>
+                            <span>Height</span><input value="<?php echo $Height; ?>" name="Height" class="field-style field-full align-right" placeholder="Height" />
                         </li>
                         <!-- Date goes here -->
                         <li>
@@ -103,9 +106,9 @@
             $fnm = $_FILES["myImage"]["name"];
             if($fnm=="")
             {
-                if(!empty($_POST['Title']) && !empty($_POST['Price']) && !empty($_POST['Size']) && !empty($_POST['Qty']))
+                if(!empty($_POST['Title']) && !empty($_POST['Price']) && !empty($_POST['Width']) && !empty($_POST['Height']) && !empty($_POST['Qty']))
                 {
-                    mysqli_query($conn,"UPDATE `furniture_product` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', SIZE='$_POST[Size]' WHERE ID=$id ");
+                    mysqli_query($conn,"UPDATE `furniture_product` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', WIDTH='$_POST[Width]', HEIGHT='$_POST[Height]' WHERE ID=$id ");
                     ?>
                         <script>
                             window.location.href = "./FURNITURE_PRODUCT_Product_table.php";
@@ -124,7 +127,7 @@
                 $dst = "../../product_image_storage/".$fnm;
                 $dst1 = "../../product_image_storage/".$fnm; 
                 move_uploaded_file($_FILES["myImage"]["tmp_name"],$dst);
-                mysqli_query($conn,"UPDATE `furniture_product` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', SIZE='$_POST[Size]',IMAGE='$dst1' WHERE ID=$id ");
+                mysqli_query($conn,"UPDATE `furniture_product` SET  TITLE='$_POST[Title]', QTY='$_POST[Qty]', PRICE='$_POST[Price]', DISCOUNT='$_POST[Discount]', WIDTH='$_POST[Width]', HEIGHT='$_POST[Height]',IMAGE='$dst1' WHERE ID=$id ");
                 // header("Location: ./FURNITURE_PRODUCT_Product_table.php");
                 ?>
                     <script>
