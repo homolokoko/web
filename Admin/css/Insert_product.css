@@ -83,6 +83,12 @@
 	justify-content: center;
 	align-items: center;
 	margin-right: 5px;
+	margin-left: 5px;
+}
+.containSize span
+{
+	width: 120px;
+	padding:0px 31px ;
 }
 .form-style-9 ul li  .field-style
 {

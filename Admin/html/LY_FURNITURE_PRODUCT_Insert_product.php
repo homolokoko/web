@@ -37,9 +37,10 @@
                         <li>
                             <span>Discount</span> <input  name="Discount" class="field-style field-full align-left" placeholder="Discount" />
                         </li>
-                        <!-- Size goes here -->
-                        <li>
-                            <span>Size</span><input name="Size" class="field-style field-full align-left" placeholder="Size" />
+                         <!-- Size goes here -->
+                         <li class="d-flex containSize" >
+                            <span>Width</span><input name="Width" class="field-style field-full align-left" placeholder="Width"/>
+                            <span>Height</span><input name="Height" class="field-style field-full align-right" placeholder="Height" />
                         </li>
                         <!-- image goes here -->
                         <li>
@@ -68,7 +69,11 @@
         $dst1 = "../../product_image_storage/".$fnm; 
         $date = date('Y-m-d');
         move_uploaded_file($_FILES["myImage"]["tmp_name"],$dst);
+<<<<<<< HEAD
         mysqli_query($conn,"INSERT into `ly_furniture_product` (TITLE,QTY,PRICE,DISCOUNT,SIZE,IMAGE)
                                         VALUES ('$_POST[Title]','$_POST[Qty]','$_POST[Price]','$_POST[Discount]','$_POST[Size]','$dst1')");
+=======
+        mysqli_query($conn,"INSERT into `ly_furniture_product` values(NULL,'$_POST[Title]','$_POST[Qty]','$_POST[Price]','$_POST[Discount]','$_POST[Width]','$_POST[Height]','$date','$dst1')");
+>>>>>>> f92ba0075d735b403de2aa555fe521db769c9992
     }
 ?>
